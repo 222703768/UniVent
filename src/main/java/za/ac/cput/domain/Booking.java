@@ -3,12 +3,12 @@ package za.ac.cput.domain;
 import java.time.LocalDateTime;
 
 public class Booking {
-    // Attributes
-    private int bookingId;
-    private LocalDateTime bookingDate;
-    private BookingStatusEnum status;
-    private Student student;
-    private Event event;
+    // Attributes (made final for immutability)
+    private final int bookingId;
+    private final LocalDateTime bookingDate;
+    private final BookingStatusEnum status;
+    private final Student student;
+    private final Event event;
 
     // Private constructor for Builder
     private Booking(Builder builder) {

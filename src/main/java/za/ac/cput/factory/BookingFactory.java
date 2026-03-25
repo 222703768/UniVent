@@ -20,7 +20,7 @@ public class BookingFactory {
             throw new IllegalArgumentException("Booking ID must be greater than 0");
         }
 
-        if (bookingDate ==null || !Helper.isValidDateTime(bookingDate)) {
+        if (!Helper.isValidDateTime(bookingDate)) {
             throw new IllegalArgumentException("Invalid booking date");
         }
 
